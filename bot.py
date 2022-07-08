@@ -73,7 +73,7 @@ async def define(ctx):
   # userID = str(ctx.author.id)
   # user = get(client.get_all_members(), id=userID)
   user = ctx.author
-  word = ctx.message.content.split(" ")[1]
+  word = ctx.message.content.split(" ")[1] 
   definitionContent = requestDefinition(word)
   embed=discord.Embed(title=f"Definition of '{word.lower()}':", description="" , color=discord.Color.purple())
   embed.set_author(name=f"Big Brain Dictionary", url="", icon_url=f"{client.user.avatar_url}")
