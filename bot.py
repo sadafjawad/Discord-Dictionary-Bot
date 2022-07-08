@@ -108,7 +108,7 @@ async def define(ctx):
       if antonyms:
         embed.add_field(name=f"antonyms", value=f"{antonyms}", inline=False)
   embed.set_footer(text="requested by: {}".format(ctx.author.display_name))
-  await ctx.send(username, embed=embed)
+  await ctx.send(username, embed=embed) 
 
 ####################################################################################
 
